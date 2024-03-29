@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Kumbh+Sans:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0; 
+    margin: 0;
+}
+:root {
+--Dark-cyan: hsl(185, 75%, 39%);
+--Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+--Dark-grayish-blue: hsl(227, 10%, 46%);
+--Dark-gray: hsl(0, 0%, 59%);
+}
+body {
+    background-color: var(--Dark-cyan);
+    font-size: 18px;
+    font-family: "Kumbh Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 1.5rem;
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right 40vw bottom 58vh, left 53vw top 44vh;
+}
+.container {
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    z-index: 900;
+}
+.container .avatar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -50px;
+}
+.container .avatar img {
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.container .name {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 20px;
+    color: var(--Very-dark-desaturated-blue);
+    margin-bottom: .5rem;
+
+}
+.container .name span {
+    color: var(--Dark-gray);
+    font-weight: 400;
+}
+.container .city {
+    text-align: center;
+    color: var(--Dark-gray);
+    margin-bottom: 2rem;
+}
+hr{
+border: none;
+
+height: .5px;
+
+}
+.container .data {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+.container .data .num {
+    text-align: center;
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue);
+    margin-bottom: 5px;
+}
+.container .data .details {
+font-size: 15px;
+color: var(--Dark-grayish-blue);
+text-align: center;
+}
+footer {
+    text-align: center;
+}
+@media (max-width:425px){
+    footer {
+        font-size: 11px;
+    }
+}
